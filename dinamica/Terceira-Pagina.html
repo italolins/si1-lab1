@@ -55,7 +55,28 @@
         <p>
           <a class="btn btn-lg btn-primary" href="Index.html" role="button">Voltar para a pagina principal &raquo;</a>
         </p>
+	<p>
+	  <input type="text" class="form-control" placeholder="Temas a aprender" onKeyPress="handle(event)" required autofocus>
+	  <a class="btn btn-lg btn-primary" role="button">Adicionar &raquo;</a>
+	  <a class="btn btn-lg btn-primary" role="button">Remover &raquo;</a>
+	</p>
+	<div class="col-lg-6">
+	  <p style="text-align:center"> Temas Aprendidos </p>
+	</div>
+	<div class="col-lg-6">
+	  <p style="text-align:center"> Temas a Aprender </p>
+	</div>
       </div>
+
+	<script>	
+		function handle(e){
+			if(e.keyCode == 13){
+				alert("Enter was pressed was presses")
+			}
+			return false;
+		}
+	</script>
+	
 
     </div> <!-- /container -->
 
